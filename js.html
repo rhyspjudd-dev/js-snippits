@@ -8,15 +8,26 @@
 </head>
 <body>
 
-    <video src="#" id="myVideo">
+    <!-- Video End Detect -->
+
+    <video id="myVideo">
+    <source src="path/#" type="video/mp4">
     </video>
 
     <script type='text/javascript'>
-        document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+
+        // Video End Detect
+        document.querySelector('#myVideo').addEventListener('ended',myHandler,false);
         function myHandler(e) {
             // What you want to do after the event
+            // $('#example01')[0].play();
+            // $('#example02').fadeOut(250);
+            // $('#example03').fadeOut(250);
         }
+
     </script>
+
+    <!-- /. Video End Detect -->
     
 </body>
 </html>
