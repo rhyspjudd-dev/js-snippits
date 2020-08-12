@@ -32,6 +32,18 @@
     </script>
 
     <!-- /. Fade In/Fade Out-->
+
+    <!-- Toggle class -->
+    <button class="switch">Click me</button>
+
+    <div class="text-block collapsed pressed">some text</div>
+    
+    <script>    
+        $('.switch').on('click', function(e) {
+          $('.text-block').toggleClass("collapsed pressed"); //you can list several class names 
+          e.preventDefault();
+        });
+    </script>
     
 </body>
 </html>
